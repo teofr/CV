@@ -1,0 +1,5 @@
+*
+!*.tex
+!Makefile
+!README.md
+!resume.cls
