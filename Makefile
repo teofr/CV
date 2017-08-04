@@ -1,11 +1,18 @@
 all: en es
 
-en: cv_en.tex
-	pdflatex cv_en.tex
+en: cv_en/ cv.tex
+	pdflatex -output-directory cv_en '\def \LANG {en} \input' cv.tex
 
 english: en
 
-es: cv_es.tex
-	pdflatex cv_es.tex
+es: cv_es/ cv.tex
+	pdflatex -output-directory cv_es '\def \LANG {es} \input' cv.tex
+
+%/:
+	mkdir $@
 
 espanol: es
+
+clean:
+	rm -r cv_en
+	rm -r cv_es

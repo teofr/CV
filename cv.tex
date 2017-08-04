@@ -1,0 +1,206 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\usepackage[utf8]{inputenc} % Tildes
+
+\usepackage{hyperref} % URLs
+
+\name{Teodoro Freund} % Your name
+\address{Washington 2329, Buenos Aires, Argentina} % Your address
+\address{tfreund95@gmail.com \\ github.com/teofr}
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+%\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
+
+
+
+\def \LANGEN {en}
+\def \LANGES {es}
+
+
+\newcommand{\langs}[2]
+{\ifx \LANG \LANGEN
+	#1
+\else
+	#2
+\fi}
+
+
+\begin{document}
+
+
+%----------------------------------------------------------
+%	MULTIPLE LANGUAGE MAGIC
+%----------------------------------------------------------
+
+%\ifx \LANG \undefined
+%	\def \LANG {en}
+%\fi
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{\langs{Education}{Educación}}
+
+{\bf Universidad de Buenos Aires} \hfill 
+{\langs{August 2015 - Present}{Agosto 2015 - Presente}} \\ 
+Licenciatura en Ciencias de la Computación \\ 
+\langs{(equivalent to B.Sc. + M.Sc. in Computer Science)}{} \hfill 
+{\em \langs{Expected graduation: 2019}{Graduación estimada: 2019}} \\
+\langs{Current GPA}{Promedio Actual}: 9.71 \langs{\hfill{\em On a 10 point scale}}{} 
+
+
+\begin{rSubsection}{Argentina Training Camp}
+{\langs{July 2016}{Julio 2016}}{}{}
+
+\langs{Attended a 2 week intensive camp on programming challenges algorithms and data structures.}
+{Asistió un curso intensivo de 2 semanas sobre algoritmos y estructuras de datos en programación competitiva.} 
+\footnote{ \langs{\url{https://sites.google.com/site/trainingcampargentina2016/english}}{\url{https://sites.google.com/site/trainingcampargentina2016}} }
+\end{rSubsection}
+
+
+
+\begin{rSubsection}
+{\langs{Academic achievements and activities}{Actividades y logros académicos}}{}{}{}
+
+\item \langs{Competed on the ACM - ICPC South America/South regional contest 2016 and ended 7th (2nd on our university). 
+\footnote{Our team name is El Bueno, el Ralo y el Feo, which means The Good, the Sparse and the Ugly. \\ 
+\url{https://icpc.baylor.edu/regionals/finder/southamerica-south-2016/standings} }}
+{Compitió en la regional de Sudamérica/Sur de la competencia ACM - ICPC 2016 y finalizó en la $7^{ma}$ posición ($2^{do}$ dentro de la universidad). 
+\footnote{Nuestro equipo se llamó {\em El Bueno, el Ralo y el Feo} \\ 
+\url{https://icpc.baylor.edu/regionals/finder/southamerica-south-2016/standings} }}
+
+\item \langs{Active participation since March 2016 on a reading group about $\lambda$-calculus, rewriting, type theory and much more. 
+\footnote{A translation can be made upon request.  \url{https://sites.google.com/site/labandalambda/} }}
+{Pariticipación activa desde Marzo del 2016 en un grupo de lectura sobre cálculo-$\lambda$, reescritura, teoría de tipos y mucho más.
+\footnote{\url{https://sites.google.com/site/labandalambda/} }}
+
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{\langs{Experience}{Experiencia}}
+
+
+\begin{rSubsection}{Universidad de Buenos Aires}
+{\langs{August 2017 - Present}{Agosto 2017 - Presente}}
+{\langs{Teacher Assistant, Haskell course}
+{Ayudante de segunda, introducción a Haskell}}
+{}
+\item \langs
+{Currently working as a TA on an introductory course on Haskell and functional programming.}
+{Actualmente trabajando como ayudante en un curso introductorio sobre Haskell y programación funcional.}
+\end{rSubsection}
+
+\begin{rSubsection}{Universidad de Buenos Aires}
+{\langs{March 2017 - July 2017}{Marzo 2017 - Julio 2017}}
+{\langs{Teacher Assistant, Algorithms and Data Structures II}
+{Ayudante de segunda, Algoritmos y Estructuras de Datos II}}{}
+
+\item \langs{Worked as a TA on a Data structures and algorithms course in my university.}{Trabajó como ayudante en una materia sobre algoritmos y estructuras de datos.}
+
+\item \langs{We teach an introduction on algorithms and data structures and a refinement on formal software specification and correctness.}{Se enseña una introducción a distintos algoritmos y estructuras de datos y un refinamiento sobre correctitud y especificación formal de software.}
+\end{rSubsection}
+
+\end{rSection}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{\langs{Projects}{Proyectos}}
+
+\begin{rSubsection}{\langs{Small 32bit OS}{Pequeño SO de 32bits}}
+{\langs{June 2017}{Junio 2017}}{}{}
+
+\langs{As an assignment for a subject on computer organization, two other friends and myself made a small OS that could run up to 16 different tasks from 2 different users in protected mode, the user could launch new tasks from the keyboard and the tasks would move through memory eating each other. \footnote{No kidding.}}
+{Como un trabajo para una materia sobre organización del computador, con dos amigos hicimos un pequeño SO capaz de ejecutar hasta 16 tareas concurrentemente de 2 usuarios distintos en modo protegido, el usuario podía lanzar nuevas tareas desde el teclado y estas se movían por memoria comiendose unas a las otras.}
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+
+\begin{rSection}{\langs{Technical Strengths}{Habilidades técnicas}}
+
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+\langs{Advanced}{Avanzado}			& C++, C \\
+\langs{Intermediate}{Intermedio}		& Haskell, Assembler \\
+\langs{Basic}{Básico}				& \LaTeX, Git, Linux, Python, OCaml \\
+% Computer Languages & C++, C, ASM, Haskell \\
+% Tools & Git, \LaTeX
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+
+\begin{rSection}{\langs{Languages}{Idiomas}}
+
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+\langs{Written English}{Inglés escrito}			& \langs{Fluid}{Fluido} \\
+\langs{Spoken English}{Inglés hablado}			& \langs{Fluid}{Fluido} \\
+\langs{Spanish}{Español}		& \langs{Native}{Nativo} \\
+\langs{Italian}{Italiano}				& \langs{Intermediate}{Intermedio} \\
+% Computer Languages & C++, C, ASM, Haskell \\
+% Tools & Git, \LaTeX
+\end{tabular}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
