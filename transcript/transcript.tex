@@ -1,0 +1,73 @@
+\documentclass[10pt]{article}
+\usepackage{sectsty}
+  \allsectionsfont{\centering}
+\usepackage{geometry}
+\geometry{%
+   margin=100pt%
+  ,top=40pt%
+  ,bottom=60pt%
+}
+\usepackage{microtype}
+\usepackage{tabulary}
+  \newcolumntype{A}{>{\raggedright\arraybackslash}b{72pt}}%
+  \newcolumntype{B}{>{\raggedright\arraybackslash}b{144pt}}%
+  \newcolumntype{C}{>{\centering\arraybackslash}b{32pt}}%
+  \newcolumntype{D}{>{\centering\arraybackslash}b{32pt}}%
+  \newcolumntype{E}{>{\raggedleft\arraybackslash}b{14pt}}%
+  \newcolumntype{F}{>{\raggedright\arraybackslash}b{10pt}}%
+  \newcolumntype{G}{>{\raggedleft\arraybackslash}b{32pt}}%
+\usepackage{booktabs}
+\usepackage{hyperref}
+\hypersetup{%
+   pdfauthor={YOUR NAME HERE}%
+  ,pdftitle={TITLE OF PDF HERE}%
+  ,pdfsubject={Unofficial Transcript}%
+  ,pdfborder={0 0 0}%
+}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt plus 2pt minus 2pt}
+\linespread{1.167}
+\widowpenalty=700
+\clubpenalty=700
+\tolerance=500
+
+\usepackage{tikz}
+
+\newcommand{\horas}[1]{ \pgfmathparse{16*(#1)}\pgfmathresult}
+
+\begin{document}
+
+\null\section*{\LARGE Unofficial Transcript, \\Universidad de Buenos Aires}
+\section*{\large Teodoro Freund}
+
+\vfill
+
+\section*{----- Courses taken -----}
+
+%El cuatrimestre dura 16 semanas
+\begin{minipage}[c]{1\textwidth}
+\centering
+	\begin{tabular}{l c r}
+	Course Name & Total Hours & Grade \\
+	\hline
+	Analysis II & \horas{10} & 8 \\
+	Algebra I & \horas{10} & 10\\
+	Statistics and Probability & \horas{10} & 10\\
+	Algorithms and Data Structures I & \horas{15} & 10\\
+	Algorithms and Data Structures II & \horas{15} & 10\\
+	Computer Organization I & \horas{10} & 10\\
+	Computer Organization II & \horas{10} & \emph{final still not taken}\\
+	Bayesian Inference and it's Applications to Cognitive Science & \horas{4} & \emph{final still not taken}\\
+	Rewriting, Lambda Calculus and Explicit Substitutions & \horas{3} & 10 \\
+	Linear Algebra & \horas{10} & \emph{final still not taken}
+	
+
+	\end{tabular}
+\end{minipage}
+
+
+\vfill
+
+\vfill
+
+\end{document}

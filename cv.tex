@@ -40,6 +40,7 @@
 \def \LANGEN {en}
 \def \LANGES {es}
 
+%\def \LANG {es}
 
 
 \newcommand{\langs}[2]
@@ -57,9 +58,9 @@
 %	MULTIPLE LANGUAGE MAGIC
 %----------------------------------------------------------
 
-%\ifx \LANG \undefined
-%	\def \LANG {en}
-%\fi
+\ifx \LANG \undefined
+	\def \LANG {en}
+\fi
 
 
 %----------------------------------------------------------------------------------------
@@ -126,7 +127,7 @@ Licenciatura en Ciencias de la Computación
 {\langs{March 2017 - July 2017}{Marzo 2017 - Julio 2017}}
 {\langs{Teacher Assistant, Algorithms and Data Structures II}
 {Ayudante de segunda, Algoritmos y Estructuras de Datos II}}{}
-\item[] \langs{Worked as a TA on a data structures and algorithms course in my university. We teach an introduction on algorithms and data structures and a refinement on formal software specification and correctness.}{Trabajó como ayudante en una materia sobre algoritmos y estructuras de datos. Se enseña una introducción a distintos algoritmos y estructuras de datos y un refinamiento sobre correctitud y especificación formal de software.}
+\item[] \langs{Worked as a TA on a data structures and algorithms course in my university. We teach an introduction on algorithms and data structures and a refinement on formal software specification and correctness. The students had to implement a map over a red-black tree, with an STL similar interface, and as a TA I had, not only to correct their work, but also guide them into writing readable and efficient code.}{Trabajó como ayudante en una materia sobre algoritmos y estructuras de datos. Se enseña una introducción a distintos algoritmos y estructuras de datos y un refinamiento sobre correctitud y especificación formal de software. Los alumnos tuvieron que implementar un diccionario sobre un red-black tree, con una interfaz similar a la de la STL, y como ayudante tuve que, además de corregir el trabajo, guiarlos para que hagan código eficiente y legible.}
 \end{rSubsection}
 
 \end{rSection}
