@@ -1,5 +1,7 @@
-*
-!*.tex
-!Makefile
-!README.md
-!resume.cls
+cv_en
+cv_es
+*.aux
+*.log
+*.pdf
+*.out
+*.synctex.gz
