@@ -24,7 +24,7 @@ jobs:
         with:
           tag_name: latest
           release_name: CV
-          draft: true
+          draft: false
           prerelease: false
       - name: Upload English CV
         id: upload-release-asset-en
