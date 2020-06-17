@@ -22,8 +22,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: CV ${{ github.ref }}
+          tag_name: latest
+          release_name: CV
           draft: true
           prerelease: false
       - name: Upload English CV
