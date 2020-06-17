@@ -27,7 +27,7 @@ jobs:
           draft: true
           prerelease: false
       - name: Upload English CV
-        id: upload-release-asset 
+        id: upload-release-asset-en
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -37,7 +37,7 @@ jobs:
           asset_name: cv_en.pdf
           asset_content_type: application/pdf
       - name: Upload Spanish CV
-        id: upload-release-asset 
+        id: upload-release-asset-es
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
