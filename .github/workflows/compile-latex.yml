@@ -10,12 +10,12 @@ jobs:
         uses: dante-ev/latex-action@master
         with:
           root_file: cv.tex
-          args: -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode -output-directory=cv_en -usepretex="\def\LANG{en}" -jobname=%A_en
+          args: -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode -output-directory=cv_en -pretex=\def\LANG{en} -usepretex -jobname=%A_en
       - name: Build spanish CV
         uses: dante-ev/latex-action@master
         with:
           root_file: cv.tex
-          args: -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode -output-directory=cv_es -usepretex="\def\LANG{es}" -jobname=%A_es
+          args: -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode -output-directory=cv_es -pretex=\def\LANG{es} -usepretex -jobname=%A_es
       - uses: meeDamian/github-release@2.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
