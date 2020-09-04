@@ -16,6 +16,12 @@ jobs:
         with:
           root_file: cv.tex
           args: -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode -output-directory=cv_es -pretex=\def\LANG{es} -usepretex -jobname=%A_es
+      - name: Build transcript
+        uses: dante-ev/latex-action@master
+        with:
+          root_file: transcript/transcript.tex
+          args: -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode -output-directory=transcript
+
       - uses: meeDamian/github-release@2.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -25,4 +31,5 @@ jobs:
           files: >
             cv_es/cv_es.pdf
             cv_en/cv_en.pdf
+            transcript/transcript.pdf
           allow_override: true
